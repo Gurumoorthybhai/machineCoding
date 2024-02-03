@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-container {
+    height: 40rem;
+    width: 30rem;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem;
+}
+
+.form-fields>input {
+    height: 2rem;
+    padding-left: 5px;
+    width: 20rem;
+}
+
+button {
+    padding: 14px 28px;
+    width: 20rem;
+    background-color: skyblue;
+    font-size: 16px;
+}
+
+/* .signup-btn {
+    padding: 14px 28px;
+    width: 20rem;
+    background-color: skyblue;
+    font-size: 16px;
+}
+
+.signup-btn-fb */
