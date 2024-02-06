@@ -83,7 +83,7 @@ button {
 }
 
 hr {
-    margin-top: 10px;
+    margin: auto;
     width: 80%;
 }
 
@@ -91,4 +91,9 @@ hr {
     width: 30px;
     background: #fff;
     margin: -12px auto 10px;
+}
+
+.userBadge {
+    margin-top: -50%;
+    width: 70px;
 }
