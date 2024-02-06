@@ -28,18 +28,22 @@
     margin: 2rem;
 } */
 
-.form-fields>input {
+/* .form-fields>input {
     height: 2rem;
     padding-left: 5px;
     width: 20rem;
+} */
+
+.form-container h1 {
+    margin-bottom: 20px;
 }
 
-button {
+/* button {
     padding: 14px 28px;
     width: 20rem;
     background-color: skyblue;
     font-size: 16px;
-}
+} */
 
 /* .signup-btn {
     padding: 14px 28px;
@@ -53,4 +57,38 @@ button {
     border-radius: 20px;
     margin: 10px 0;
     padding: 10px;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px 0;
+    font-size: 15px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-btn {
+    background-color: #1c8adb;
+}
+
+.signup-btn-google {
+    background-color: #21afde;
+}
+
+hr {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.or {
+    width: 30px;
+    background: #fff;
+    margin: -12px auto 10px;
 }
