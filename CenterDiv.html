@@ -8,41 +8,36 @@
 
 
     <style>
+        /* Solution 1: With position */
+        /* parent text-align:center works in chile, only if child is inline, inline-block */
+
         .outer {
             height: 300px;
             width: 500px;
-
             background-color: aquamarine;
+            /* margin: auto; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
             /* text-align: center; */
-            margin: auto;
-            position: relative;
+            /* position: relative; */
         }
 
         .inner {
             width: 200px;
             height: 200px;
             background-color: red;
-            top: 50%;
+
+            /* top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); */
             /* margin: auto; */
-            position: absolute;
+            /* position: absolute; */
         }
     </style>
 </head>
 
 <body>
-    <!-- <div style="text-align: center">
-        <div style="border: 1px solid red;background-color: #999;width: 400px;">
-            <span style="color:#fff">Center the text</span>
-            <h1>Test 2</h1>
-            <form action="">
-                <input type="text">
-            </form>
-        </div>
-    </div> -->
-
-
     <div class="outer">
         <div class="inner"></div>
     </div>
