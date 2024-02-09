@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    /* padding: 10px; */
+}
+
+.tab {
+    cursor: pointer;
+    padding: 15px;
+}
+
+.tab.active {
+    background-color: red;
+}
+
+.tab:hover {
+    background-color: #aaa;
+}
+
+.tab-content {
+    text-align: center;
+}
