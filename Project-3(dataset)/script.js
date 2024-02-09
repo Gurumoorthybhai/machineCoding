@@ -31,8 +31,18 @@
 
 // console.log(p[2].dataset.typeFood);
 
-const p = document.querySelector('p');
-console.log(p.dataset.typeFood);
+// const p = document.querySelector('p');
+// console.log(p.dataset.typeFood);
 
+
+const paragraphs = document.querySelectorAll('p');
+
+paragraphs.forEach(p => {
+    p.addEventListener('click', handleClick);
+})
+
+function handleClick(event) {
+    console.log(event.target.dataset.typeFood);
+}
 
 
