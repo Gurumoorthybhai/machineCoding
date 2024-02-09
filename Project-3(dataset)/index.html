@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!-- Below attribute is a custom data attribute, which helps to identify a DOM elements with extra infomation we give
+-> it stores only string
+-> name can have dot(.), hypen(-), colon(:), it should not contain capital letters
+
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Data Attributes</title>
+
+    <style>
+        p[data-type-food="veg"] {
+            background-color: green;
+        }
+
+        p[data-type-food="non-veg"] {
+            background-color: red;
+        }
+
+        p[data-type-food="veggie"] {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <!-- Diff type of custom data name -->
+        <!-- <p data.type.food="veg" id="p1">This is the first line of paragraph 1</p>
+        <p data-type.food="veg" id="p1">This is the first line of paragraph 10</p>
+        <p data-type-food="non-veg">This is the first line of paragraph 2</p>
+        <p data:type:food="veggie">This is the first line of paragraph 3</p>
+        <p data-type:food="veggie">This is the first line of paragraph 4</p> -->
+
+        <p data-type-food="veg">This is the first line of paragraph 1</p>
+
+        <p data-type-food="non-veg">This is the first line of paragraph 2</p>
+
+        <p data-type-food="veggie">This is the first line of paragraph 3</p>
+
+        <ul>
+            <li data-type="veg" data-distance="12km" data-restaurant-id="cbe1">Restaurants 1</li>
+            <li data-type="non-veg" data-distance="10km" data-restaurant-id="cbe2"> Restaurants 2
+            </li>
+            <li data-type="veggie" data-distance="8km" data-restaurant-id="cbe3">Restaurants 3</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
