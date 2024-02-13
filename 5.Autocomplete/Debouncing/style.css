@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    margin: 5rem;
+}
+
+
+input {
+    width: 60%;
+    /* height: 2rem; */
+    font-size: 1.2rem;
+    padding: 15px;
+}
