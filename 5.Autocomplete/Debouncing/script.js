@@ -37,18 +37,28 @@ function DebounceHandleKeyUp(func, delay) {
 
 const throttleHandleKeyUp = (cb, delay) => {
 
-    let timer;
+    let shouldWait = false;
+    let waitingArg;
+    let timoutFun = () => {
+        if (waitingArg == null) {
+            shouldWait = false;
+        } else {
+            cb.apply(this, waitingArg);
+            waitingArg = null;
+            setTimeout(timoutFun, delay);
+        }
+    };
 
     return (...args) => {
 
-        if (timer) {
-
+        if (shouldWait) {
+            waitingArg = args;
             return;
         }
         cb.apply(this, args);
-        timer = setTimeout(() => {
-            timer = undefined;
-        }, delay);
+        shouldWait = true;
+
+        setTimeout(timoutFun, delay);
     }
 }
 
