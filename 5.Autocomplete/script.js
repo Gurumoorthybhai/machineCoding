@@ -16,6 +16,15 @@ const searchValue = document.querySelector('#search-field');
 
 let resultBox = document.querySelector('.result-box');
 
+function debounce(cb, delay) {
+
+    let timer;
+
+    return (...arg) => {
+
+        clearTimeout(timerId);
+    }
+}
 
 searchValue.onkeyup = () => {
 
